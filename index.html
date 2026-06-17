@@ -1,288 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ellis Rian T. Nuevas - Resume</title>
-    <style>
-        body {
-            font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-            line-height: 1.4;
-            color: #000;
-            margin: 0;
-            padding: 20px;
-            background-color: #f7f7f7;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELLIS RIAN T. NUEVAS - Resume</title>
 
-        .resume-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 40px 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+    
+.contact a{
+    color: inherit;
+    text-decoration: none;
+}
 
-        .header h1 {
-            margin: 0;
-            font-size: 24pt;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+.contact a:hover{
+    text-decoration: underline;
+}
+  
+body{
+    background:#d9d9d9;
+    font-family:'Montserrat',sans-serif;
+    color:#111;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
 
-        .contact-info {
-            font-size: 11pt;
-            margin-top: 5px;
-        }
+.page{
+    width:595px;
+    background:#fff;
+    padding:28px 32px;
+    box-shadow:0 0 8px rgba(0,0,0,.08);
+}
 
-        .contact-info a {
-            color: #000;
-            text-decoration: none;
-        }
+h1{
+    text-align:center;
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    margin-bottom:8px;
+}
 
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
+.contact{
+    text-align:center;
+    font-size:11px;
+    margin-bottom:12px;
+}
 
-        /* Main Section Formatting */
-        .section {
-            margin-bottom: 15px;
-        }
+.section{
+    margin-top:10px;
+}
 
-        .section-title {
-            font-size: 12pt;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 1px solid #000;
-            margin-bottom: 10px;
-            padding-bottom: 2px;
-            text-align:center;
-        }
+.section-title{
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.4px;
+    text-transform:uppercase;
+    border-bottom:2px solid #111;
+    margin-bottom:5px;
+    padding-bottom:2px;
+}
 
-        .entry-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
+.small{
+    font-size:10px;
+    line-height:1.35;
+}
 
-        .company-name, .project-name {
-            font-size: 11pt;
-            font-weight: bold;
-        }
+.skills p{
+    margin-bottom:2px;
+}
 
-        .role-title {
-            font-size: 11pt;
-            font-style: italic;
-            font-weight: bold;
-        }
+.item{
+    margin-bottom:10px;
+}
 
-        .date {
-            font-size: 11pt;
-            font-weight: bold;
-        }
+.item-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    font-size:10px;
+    font-weight:700;
+    margin-bottom:2px;
+}
 
-        p {
-            margin: 0 0 5px 0;
-            font-size: 11pt;
-        }
+.item-header .left{
+    max-width:72%;
+}
 
-        ul {
-            margin: 5px 0 10px 0;
-            padding-left: 20px;
-        }
+.item-header .right{
+    text-align:right;
+    white-space:nowrap;
+}
 
-        li {
-            font-size: 11pt;
-            margin-bottom: 4px;
-        }
+.role{
+    font-size:10px;
+    font-weight:600;
+    margin-bottom:3px;
+}
 
-        .cert-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+ul{
+    margin-left:16px;
+}
 
-        .cert-table td {
-            font-size: 11pt;
-            padding: 2px 0;
-        }
+li{
+    font-size:10px;
+    line-height:1.35;
+    margin-bottom:2px;
+}
 
-        .cert-table td:last-child {
-            text-align: right;
-            width: 100px;
-        }
+.edu-row,
+.cert-row{
+    display:flex;
+    justify-content:space-between;
+    font-size:10px;
+    margin-bottom:3px;
+}
 
-        @media print {
-            body {
-                background-color: transparent;
-                padding: 0;
-            }
-            .resume-container {
-                box-shadow: none;
-                padding: 0;
-                max-width: 100%;
-            }
-            .section {
-                page-break-inside: avoid;
-            }
-        }
+.bold{
+    font-weight:700;
+}
 
-        @media (max-width: 600px) {
-            .entry-header {
-                flex-direction: column;
-            }
-            .date {
-                font-size: 10pt;
-                color: #555;
-            }
-            .resume-container {
-                padding: 20px;
-            }
-        }
-    </style>
+@media (max-width:700px){
+
+body{
+    padding:10px;
+}
+
+.page{
+    width:100%;
+    padding:20px;
+}
+
+h1{
+    font-size:24px;
+}
+
+.item-header{
+    flex-direction:column;
+    gap:2px;
+}
+
+.item-header .right{
+    text-align:left;
+}
+
+}
+</style>
 </head>
+
 <body>
 
-    <div class="resume-container">
-        
-        <div class="header">
-            <h1>ELLIS RIAN T. NUEVAS</h1>
-            <div class="contact-info">
-                San Miguel, Bulacan, Philippines <br>
-                <strong>Github:</strong> <a href="https://github.com/ellrn" target="_blank" rel="noopener noreferrer">github.com/ellrn</a> | 
-                <strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/ellis-rian-nuevas-50926b375" target="_blank" rel="noopener noreferrer">linkedin.com/in/ellis-rian-nuevas-50926b375</a> <br>
-                +63 9234707660 | <a href="mailto:ellisnuevas00@gmail.com">ellisnuevas00@gmail.com</a>
-            </div>
-        </div>
+<div class="page">
 
-        <div class="section">
-            <div class="section-title">OBJECTIVES</div>
-            <p>A motivated fresh graduate seeking an entry-level position to gain hands-on industry experience, apply and further develop technical skills, and grow professionally while contributing to the success of the organization.</p>
-        </div>
+<h1>ELLIS RIAN T. NUEVAS</h1>
 
-        <div class="section">
-            <div class="section-title">SKILLS</div>
-            <p><strong>Web Development:</strong> HTML, CSS, JavaScript, React, TypeScript, Angular, lonic</p>
-            <p><strong>Backend & APIs:</strong> Python, PHP, Codelgniter; Development of RESTful APIs</p>
-        </div>
+<div class="contact">
+    Bulacan, Philippines |
+    <a href="mailto:ellisnuevas00@gmail.com">ellisnuevas00@gmail.com</a> |
+    +63 9234707660
+</div>
+    
+<section class="section skills">
+<div class="section-title">Skills</div>
 
-        <div class="section">
-            <div class="section-title">PROFESSIONAL EXPERIENCE</div>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="company-name">Microgenesis Business Systems</span>
-                    <span class="date">August 2025 - January 2026</span>
-                </div>
-                <div class="role-title">Software Development Intern</div>
-                <ul>
-                    <li>Gained hands-on experience contributing to the end-to-end development of internal enterprise web systems.</li>
-                    <li>Enhanced and debugged applications to improve system reliability and performance.</li>
-                    <li>Implemented new features to automate client purchase renewal tracking</li>
-                    <li>Collaborated with the team following clean code and documentation practices</li>
-                    <li>Assisted in project reporting and system documentation</li>
-                </ul>
-            </div>
-        </div>
+<div class="small">
+<p><span class="bold">Programming Languages:</span> JavaScript, TypeScript, Python, PHP</p>
+<p><span class="bold">Frameworks &amp; Libraries:</span> React, Angular, CodeIgniter, FastAPI, Django</p>
+<p><span class="bold">Tools/Technologies:</span> MySQL, Git, Github, Github Actions</p>
+</div>
+</section>
 
-        <div class="section">
-            <div class="section-title">PROJECTS</div>
+<section class="section">
+<div class="section-title">Professional Experience</div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="project-name">Prolab Renewal Care - Backend Developer</span>
-                    <span class="date">August 2025 - November 2025</span>
-                </div>
-                <ul>
-                    <li>Reduced manual data entry errors and maintained system stability by resolving legacy issues</li>
-                    <li>Worked with <strong>PHP</strong> despite having no prior experience, quickly learning and adapting to the language to support backend functionality and integration for the project.</li>
-                </ul>
-            </div>
+<div class="item">
 
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="project-name">MGEN Central Hub - Full Stack Developer</span>
-                    <span class="date">November 2025 - January 2026</span>
-                </div>
-                <ul>
-                    <li>Led development of a centralized internal web portal from scratch</li>
-                    <li>Built scalable frontend architecture using <strong>React</strong> and <strong>TypeScript</strong></li>
-                    <li>Designed and implemented REST APIs using <strong>Django</strong></li>
-                    <li>Managed over 50% of the system's core logic and database integration</li>
-                </ul>
-            </div>
+<div class="item-header">
+<div class="left">Microgenesis Business Systems</div>
+<div class="right">August 2025 - January 2026</div>
+</div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="project-name">Campus Mapping | BUtility - Developer</span>
-                    <span class="date">2025</span>
-                </div>
-                <ul>
-                    <li><strong>Navigation Prototyping:</strong> Developed the initial Concept for a street-view navigation feature using <strong>Flutter</strong>, utilizing a directional photo system (Front, Back, Left, and Right views) to orient users.</li>
-                    <li>Completed key sections of the research paper, ensuring clarity and proper documentation</li>
-                </ul>
-            </div>
+<div class="role">Software Development Intern (On - site)</div>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="project-name">DualScript - Language Learning App - Full Stack Developer</span>
-                    <span class="date">2025</span>
-                </div>
-                <ul>
-                    <li>Developed an iOS application using <strong>Swift</strong> that teaches Kanji, Katakana, and Hangeul characters.</li>
-                    <li>Implemented language selection, alphabet viewing screens, and a short quiz for character recognition.</li>
-                    <li>Designed multi-screen navigation and user interface layouts using <strong>Xcode</strong>.</li>
-                    <li>Tested and debugged the application to ensure smooth navigation and functionality.</li>
-                </ul>
-            </div>
+<ul>
+<li>Contributed to the end-to-end development of internal enterprise web systems, including feature implementation, testing, and system enhancements to support daily business operations.</li>
 
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="project-name">Telemetry Dashboard (In Progress)</span>
-                    <span class="date">2026</span>
-                </div>
-                <ul>
-                    <li>Developing a telemetry visualization tool using <strong>Next.js</strong> and <strong>TypeScript</strong> with a <strong>Django</strong> backend</li>
-                    <li>Reads telemetry data from files and exposes it for frontend visualization</li>
-                    <li>Displays racing metrics (speed, RPM, throttle, brake) using tables and charts</li>
-                    <li>Built to analyze and better understand driving performance in racing games</li>
-                </ul>
-            </div>
-        </div>
+<li>Improved application reliability and performance by debugging issues, resolving system errors, and optimizing existing functionalities across internal enterprise applications.</li>
 
-        <div class="section">
-            <div class="section-title">EDUCATION</div>
-            <div class="entry-header">
-                <span class="company-name">Baliuag University</span>
-                <span class="date">2022-2026</span>
-            </div>
-            <p>Bachelor of Science in Information Technology</p>
-        </div>
+<li>Collaborated with developers and other team members to write clean, maintainable, and well-documented code following development best practices, established coding standards, conduct testing, and support bug fixing.</li>
+</ul>
 
-        <div class="section">
-            <div class="section-title">CERTIFICATIONS</div>
-            <table class="cert-table">
-                <tbody>
-                    <tr>
-                        <td>Microsoft Office Specialist: Excel Associate (Office 2019)</td>
-                        <td>2023</td>
-                    </tr>
-                    <tr>
-                        <td>Cisco Introduction to Cybersecurity</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Data Analytics Essentials</td>
-                        <td>2024</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+</div>
 
-    </div>
+</section>
+
+<section class="section">
+
+<div class="section-title">Projects</div>
+
+<div class="item">
+
+<div class="item-header">
+<div class="left">Prolab Renewal Care | Git, CodeIgniter, Javascript, MySQL, PHP</div>
+<div class="right">August 2025 - November 2025</div>
+</div>
+
+<ul>
+
+<li>Maintained and enhanced an internal enterprise system used to manage client products, contracts, and company information through feature enhancements and system improvements.</li>
+
+<li>Improved data accuracy and system reliability by resolving duplicate records, fixing display issues, correcting inconsistent database values, and implementing client-requested frontend features.</li>
+
+<li>Increased system stability by troubleshooting and implementing backend fixes in PHP, while enhancing existing features and developing client-requested frontend improvements within an established codebase.</li>
+
+</ul>
+
+</div>
+
+<div class="item">
+
+<div class="item-header">
+<div class="left">MGEN Central Hub | Git, Django, React.js, Typescript, MySQL</div>
+<div class="right">November 2025 - January 2026</div>
+</div>
+
+<ul>
+
+<li>Led the development of an internal enterprise platform that centralizes data from multiple company systems into a single, unified system to improve access and efficiency.</li>
+
+<li>Built backend logic and integrated databases to support system consolidation and ensure consistent and reliable data across different sources.</li>
+
+<li>Worked with a development team to deliver full-stack features, including backend functionality, database integration, and frontend components to create a smooth and usable application.</li>
+
+</ul>
+
+</div>
+
+<div class="item">
+
+<div class="item-header">
+<div class="left">Telemetry Dashboard | FastApi, React.js, Typescript, Github Actions</div>
+<div class="right">2026</div>
+</div>
+
+<ul>
+
+<li>Built a full-stack telemetry analytics platform using Next.js, TypeScript, and FastAPI to process, analyze, and visualize game telemetry data for in-depth performance evaluation and behavior insights.</li>
+
+<li>Implemented a backend data pipeline to ingest raw telemetry files, parse driving metrics, and expose REST API endpoints, with automated CI workflows using GitHub Actions for testing and integration.</li>
+
+<li>Implemented data visualization features using tables and charts to present key performance indicators such as speed, RPM, throttle input, braking intensity, and lap behavior patterns, enabling detailed analysis and comparison.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-title">Education</div>
+
+<div class="edu-row">
+<div>Baliuag University</div>
+<div>2022 - 2026</div>
+</div>
+
+<div class="edu-row">
+<div>Bachelor of Science in Information Technology</div>
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-title">Certifications</div>
+
+<div class="cert-row">
+<div>Microsoft Office Specialist: Excel Associate (Office 2019)</div>
+<div>2023</div>
+</div>
+
+<div class="cert-row">
+<div>Cisco Introduction to Cybersecurity</div>
+<div>2024</div>
+</div>
+
+<div class="cert-row">
+<div>Data Analytics Essentials</div>
+<div>2024</div>
+</div>
+
+</section>
+
+</div>
 
 </body>
 </html>
